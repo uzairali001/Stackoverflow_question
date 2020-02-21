@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\A\A.csproj" />
+    <ProjectReference Include="..\B\B.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\lib\v226\Microsoft.EntityFrameworkCore.Relational.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>lib\v226\Microsoft.EntityFrameworkCore.Relational.dll</Link>
+    </Content>
+    <Content Include="..\lib\v311\Microsoft.EntityFrameworkCore.Relational.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>lib\v311\Microsoft.EntityFrameworkCore.Relational.dll</Link>
+    </Content>
+  </ItemGroup>
+
+</Project>
